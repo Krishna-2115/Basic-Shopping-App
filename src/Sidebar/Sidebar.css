@@ -1,0 +1,139 @@
+/* Sidebar container */
+.sidebar {
+  width: 15%;
+  margin-top: 4px;
+  position: fixed;
+  height: 100%;
+  border-right: 2px solid #b0b0b0;
+  /* Light gray border */
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #f5f5f5, #ffffff);
+  /* Light gray gradient background */
+  padding: 1rem 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  /* Darker text for contrast */
+}
+
+/* Logo section */
+.logo-container {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.logo-container h1 {
+  font-size: 2.5rem;
+  margin-top: 1.3rem;
+  color: #ffffff;
+  /* Lighter gray for the logo */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar titles */
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #06b817;
+  /* Darker text for contrast */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #aaa;
+  /* Underline with light gray */
+  width: 90%;
+  /* Align with content width */
+  text-align: left;
+  transition: color 0.3s ease;
+  /* Smooth color transition on hover */
+}
+
+/* Hover effect for sidebar titles */
+.sidebar-title:hover {
+  color: #9d8989;
+  /* Slightly darker gray on hover */
+}
+
+/* Label container */
+.sidebar-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 90%;
+  /* Align with other content */
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.3s ease;
+  color: #3f3f3f;
+  /* Medium gray for labels */
+}
+
+/* Hover effect for labels */
+.sidebar-label-container:hover {
+  transform: scale(1.02);
+  /* Slightly grow on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #333;
+  /* Change color to darker gray on hover */
+}
+
+/* Checkbox/Radio styling */
+.sidebar-label-container input[type="radio"] {
+  margin-right: 0.5rem;
+  accent-color: #555;
+  /* Medium gray highlight for inputs */
+}
+
+/* Checkmark styling */
+.checkmark {
+  width: 18px;
+  height: 18px;
+  background-color: #e0e0e0;
+  /* Light gray background for unselected checkmark */
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  /* Light gray border for unselected checkmark */
+  margin-right: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* When radio is checked */
+.sidebar-label-container input[type="radio"]:checked+.checkmark {
+  background-color: #555;
+  /* Darker gray background when checked */
+  border-color: #555;
+  /* Darker gray border when checked */
+}
+
+/* Scrollbar styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+  /* Slimmer scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #777;
+  /* Medium gray scrollbar thumb */
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #d3d3d3;
+  /* Light gray background for scrollbar track */
+}
+
+/* Smooth animation for sidebar */
+.sidebar {
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+/* Optional: If you want a hover effect that opens the sidebar */
+.sidebar:hover {
+  width: 20%;
+  /* Expand sidebar width on hover */
+  padding: 1rem 1rem;
+  /* Add more padding */
+}

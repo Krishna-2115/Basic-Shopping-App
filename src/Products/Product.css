@@ -1,0 +1,119 @@
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+  margin-top: 5rem;
+  z-index: -2;
+  justify-content: center;
+  /* Center align the cards */
+}
+
+/* Individual card styling */
+.card {
+  margin: 20px;
+  border-radius: 10px;
+  /* Rounded corners */
+  border: 2px solid #ff0000;
+  /* Red border to match theme */
+  padding: 20px;
+  cursor: pointer;
+  background-color: #333;
+  /* Dark background for card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  /* Initial subtle shadow */
+  overflow: hidden;
+  /* Prevent overflow on hover */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  /* Lift card a bit more */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  /* Stronger shadow on hover */
+}
+
+/* Card image styling */
+.card-img {
+  width: 13rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  /* Smooth image corners */
+  transition: transform 0.3s ease;
+  /* Smooth image scaling */
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect on image */
+}
+
+/* Card title styling */
+.card-title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  /* Bigger title for emphasis */
+  font-weight: 600;
+  color: #00ff00;
+  /* Neon Green for title */
+}
+
+/* Card reviews section */
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  /* Align items properly */
+}
+
+.rating-star {
+  color: #d5ab55;
+  /* Gold color for rating stars */
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+  color: #aaa;
+  /* Light gray color for reviews */
+}
+
+/* Card price styling */
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.card-price .bag-icon {
+  color: #fff;
+  /* White color for bag icon */
+  transition: color 0.3s ease;
+}
+
+.card-price .bag-icon:hover {
+  color: #ff0000;
+  /* Red highlight on hover */
+}
+
+.card-price .price {
+  font-size: 1.3rem;
+  color: #fff;
+  /* White for price text */
+}
+
+.card-price .price span {
+  font-size: 0.9rem;
+  color: #bbb;
+  /* Lighter gray for old price or discount */
+  text-decoration: line-through;
+}
+
+.card:hover .card-img {
+  transform: scale(1.05);
+  /* Zoom image slightly */
+}

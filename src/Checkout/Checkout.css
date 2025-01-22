@@ -1,0 +1,223 @@
+.checkout-container {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #333;
+    padding: 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+.checkout-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2a2d43;
+}
+
+.checkout-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    flex: 0 0 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.order-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.order-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.checkout-form {
+    flex: 0 0 45%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form .form-group {
+    margin-bottom: 20px;
+}
+
+.checkout-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.checkout-form input,
+.checkout-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.checkout-form .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.checkout-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkout-actions button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.place-order-btn {
+    background: linear-gradient(145deg, #4caf50, #388e3c);
+    color: white;
+}
+
+.place-order-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.place-order-btn:hover:not(:disabled) {
+    background: linear-gradient(145deg, #388e3c, #4caf50);
+    transform: scale(1.05);
+}
+
+.back-to-cart-btn {
+    background: #ff9800;
+    color: white;
+}
+
+.back-to-cart-btn:hover {
+    background: #fb8c00;
+    transform: scale(1.05);
+}
+
+/* Modal Background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Container */
+.modal-content {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    animation: scaleIn 0.3s ease-in-out;
+}
+
+/* Modal Header */
+.modal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-left: 10px;
+}
+
+.modal-icon {
+    font-size: 3rem;
+    color: #4caf50;
+}
+
+/* Modal Message */
+.modal-content p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Close Button */
+.close-modal-btn {
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close-modal-btn:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
