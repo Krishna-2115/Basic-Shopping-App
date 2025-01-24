@@ -6,7 +6,6 @@
     font-family: 'Poppins', Arial, sans-serif;
     color: #333;
     background-color: #f9f9f9;
-    /* Add light background for better contrast */
 }
 
 /* Title */
@@ -53,7 +52,6 @@
 .cart-item:hover {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
     transform: translateY(-8px);
-    /* Lift effect on hover */
 }
 
 /* Cart item image */
@@ -242,5 +240,49 @@
     .back-btn {
         width: 100%;
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-container {
+        padding: 15px;
+    }
+
+    .cart-title {
+        font-size: 1.8rem;
+    }
+
+    .cart-item {
+        padding: 15px;
+    }
+
+    .cart-item-title {
+        font-size: 1.2rem;
+    }
+
+    .cart-item-price,
+    .cart-item-size,
+    .cart-item-quantity {
+        font-size: 1rem;
+    }
+
+    .quantity-btn,
+    .remove-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .cart-summary h3 {
+        font-size: 1.5rem;
+    }
+
+    .cart-summary p {
+        font-size: 1.2rem;
+    }
+
+    .checkout-btn,
+    .back-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }

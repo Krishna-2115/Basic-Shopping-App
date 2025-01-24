@@ -1,3 +1,4 @@
+/* Checkout Container */
 .checkout-container {
     font-family: 'Poppins', Arial, sans-serif;
     color: #333;
@@ -23,15 +24,17 @@
     margin-bottom: 20px;
 }
 
-.order-summary {
-    flex: 0 0 45%;
+.order-summary,
+.checkout-form {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 45%;
 }
 
-.order-summary h3 {
+.order-summary h3,
+.checkout-form h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 15px;
@@ -53,14 +56,6 @@
 .order-total {
     font-size: 1.2rem;
     font-weight: bold;
-}
-
-.checkout-form {
-    flex: 0 0 45%;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .checkout-form .form-group {
@@ -219,5 +214,163 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .checkout-container {
+        padding: 20px;
+    }
+
+    .checkout-title {
+        font-size: 2rem;
+    }
+
+    .checkout-content {
+        flex-direction: column;
+    }
+
+    .order-summary,
+    .checkout-form {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+
+    .order-summary h3,
+    .checkout-form h3 {
+        font-size: 1.3rem;
+    }
+
+    .order-item {
+        font-size: 0.9rem;
+    }
+
+    .order-total {
+        font-size: 1rem;
+    }
+
+    .checkout-form label {
+        font-size: 0.9rem;
+    }
+
+    .checkout-form input,
+    .checkout-form select {
+        font-size: 0.9rem;
+    }
+
+    .checkout-actions button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .place-order-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .back-to-cart-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .modal-content {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .modal-icon {
+        font-size: 2.5rem;
+    }
+
+    .modal-content p {
+        font-size: 1rem;
+    }
+
+    .close-modal-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-container {
+        padding: 15px;
+    }
+
+    .checkout-title {
+        font-size: 1.6rem;
+    }
+
+    .checkout-content {
+        flex-direction: column;
+    }
+
+    .order-summary,
+    .checkout-form {
+        flex: 0 0 100%;
+    }
+
+    .order-summary h3,
+    .checkout-form h3 {
+        font-size: 1.2rem;
+    }
+
+    .order-item {
+        font-size: 0.8rem;
+    }
+
+    .order-total {
+        font-size: 1rem;
+    }
+
+    .checkout-form label {
+        font-size: 0.8rem;
+    }
+
+    .checkout-form input,
+    .checkout-form select {
+        font-size: 0.8rem;
+    }
+
+    .checkout-actions button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .place-order-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .back-to-cart-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .modal-content {
+        padding: 25px;
+        max-width: 90%;
+    }
+
+    .modal-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal-icon {
+        font-size: 2rem;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
+    }
+
+    .close-modal-btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
     }
 }
